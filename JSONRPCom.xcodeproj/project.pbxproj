@@ -16,6 +16,9 @@
 		00E06A2B1DD7396E004975B4 /* JSONRPCRequsetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */; };
 		00E06A331DD74B38004975B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A321DD74B38004975B4 /* main.m */; };
 		00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
+		2D5C4315F7814ED030EC589C /* libPods-sndbx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */; };
+		B15DF64EE4ECB0AF530EA75A /* libPods-JSONRPComTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */; };
+		D0E5E1B84CECB0EFE438BF5D /* libPods-JSONRPCom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9C03040C49B3586084817 /* libPods-JSONRPCom.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,15 @@
 		00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequsetTest.m; sourceTree = "<group>"; };
 		00E06A301DD74B38004975B4 /* sndbx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sndbx; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E06A321DD74B38004975B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A41388C54EFD52CA3FD67E5 /* Pods-JSONRPCom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONRPCom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONRPCom/Pods-JSONRPCom.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONRPComTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1E13C032B2A8E9F4254BDA /* Pods-sndbx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sndbx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sndbx/Pods-sndbx.debug.xcconfig"; sourceTree = "<group>"; };
+		2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sndbx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F66A73DCF73CA69F23974C9 /* Pods-JSONRPComTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONRPComTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONRPComTests/Pods-JSONRPComTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85758DC305181C4AAF920D67 /* Pods-JSONRPCom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONRPCom.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONRPCom/Pods-JSONRPCom.release.xcconfig"; sourceTree = "<group>"; };
+		871A7506E7FC808475B9634D /* Pods-sndbx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sndbx.release.xcconfig"; path = "Pods/Target Support Files/Pods-sndbx/Pods-sndbx.release.xcconfig"; sourceTree = "<group>"; };
+		CFC9C03040C49B3586084817 /* libPods-JSONRPCom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSONRPCom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EFD89671C182CAA7DABB83 /* Pods-JSONRPComTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONRPComTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONRPComTests/Pods-JSONRPComTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E5E1B84CECB0EFE438BF5D /* libPods-JSONRPCom.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E06A121DD71D12004975B4 /* JSONRPCom.framework in Frameworks */,
+				B15DF64EE4ECB0AF530EA75A /* libPods-JSONRPComTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5C4315F7814ED030EC589C /* libPods-sndbx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,8 @@
 				00E06A151DD71D12004975B4 /* JSONRPComTests */,
 				00E06A311DD74B38004975B4 /* sndbx */,
 				00E06A091DD71D11004975B4 /* Products */,
+				78F57DE85F141E200170827E /* Pods */,
+				90ED199EE30396715AA37BF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +163,29 @@
 			path = sndbx;
 			sourceTree = "<group>";
 		};
+		78F57DE85F141E200170827E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A41388C54EFD52CA3FD67E5 /* Pods-JSONRPCom.debug.xcconfig */,
+				85758DC305181C4AAF920D67 /* Pods-JSONRPCom.release.xcconfig */,
+				3F66A73DCF73CA69F23974C9 /* Pods-JSONRPComTests.debug.xcconfig */,
+				F2EFD89671C182CAA7DABB83 /* Pods-JSONRPComTests.release.xcconfig */,
+				2C1E13C032B2A8E9F4254BDA /* Pods-sndbx.debug.xcconfig */,
+				871A7506E7FC808475B9634D /* Pods-sndbx.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90ED199EE30396715AA37BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC9C03040C49B3586084817 /* libPods-JSONRPCom.a */,
+				0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */,
+				2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,10 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E06A1C1DD71D12004975B4 /* Build configuration list for PBXNativeTarget "JSONRPCom" */;
 			buildPhases = (
+				5132D5F5605019974E18A027 /* [CP] Check Pods Manifest.lock */,
 				00E06A031DD71D11004975B4 /* Sources */,
 				00E06A041DD71D11004975B4 /* Frameworks */,
 				00E06A051DD71D11004975B4 /* Headers */,
 				00E06A061DD71D11004975B4 /* Resources */,
+				FF67BBF3F288FDDB3BB4986F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E06A1F1DD71D12004975B4 /* Build configuration list for PBXNativeTarget "JSONRPComTests" */;
 			buildPhases = (
+				93496B75F52F500949081163 /* [CP] Check Pods Manifest.lock */,
 				00E06A0D1DD71D12004975B4 /* Sources */,
 				00E06A0E1DD71D12004975B4 /* Frameworks */,
 				00E06A0F1DD71D12004975B4 /* Resources */,
+				CD08B3E2D1A5FC09F665DD91 /* [CP] Embed Pods Frameworks */,
+				9E6258556EEB53228E4E6478 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E06A341DD74B38004975B4 /* Build configuration list for PBXNativeTarget "sndbx" */;
 			buildPhases = (
+				7C970D1C49919984F4DAFF8D /* [CP] Check Pods Manifest.lock */,
 				00E06A2C1DD74B38004975B4 /* Sources */,
 				00E06A2D1DD74B38004975B4 /* Frameworks */,
 				00E06A2E1DD74B38004975B4 /* CopyFiles */,
+				163B630F1D022D593877F5E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +322,114 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		163B630F1D022D593877F5E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sndbx/Pods-sndbx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5132D5F5605019974E18A027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C970D1C49919984F4DAFF8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93496B75F52F500949081163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6258556EEB53228E4E6478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONRPComTests/Pods-JSONRPComTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD08B3E2D1A5FC09F665DD91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONRPComTests/Pods-JSONRPComTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF67BBF3F288FDDB3BB4986F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONRPCom/Pods-JSONRPCom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00E06A031DD71D11004975B4 /* Sources */ = {
@@ -413,6 +568,7 @@
 		};
 		00E06A1D1DD71D12004975B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A41388C54EFD52CA3FD67E5 /* Pods-JSONRPCom.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -431,6 +587,7 @@
 		};
 		00E06A1E1DD71D12004975B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85758DC305181C4AAF920D67 /* Pods-JSONRPCom.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -449,6 +606,7 @@
 		};
 		00E06A201DD71D12004975B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F66A73DCF73CA69F23974C9 /* Pods-JSONRPComTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
 				INFOPLIST_FILE = JSONRPComTests/Info.plist;
@@ -460,6 +618,7 @@
 		};
 		00E06A211DD71D12004975B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EFD89671C182CAA7DABB83 /* Pods-JSONRPComTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
 				INFOPLIST_FILE = JSONRPComTests/Info.plist;
@@ -471,6 +630,7 @@
 		};
 		00E06A351DD74B38004975B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1E13C032B2A8E9F4254BDA /* Pods-sndbx.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
@@ -482,6 +642,7 @@
 		};
 		00E06A361DD74B38004975B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871A7506E7FC808475B9634D /* Pods-sndbx.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = 4E4L42WQ49;

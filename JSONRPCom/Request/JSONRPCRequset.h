@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Mantle.h"
 
-@interface JSONRPCRequset : NSObject <NSCopying>
+@interface JSONRPCRequset : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly, copy) NSString* version;
 @property (nonatomic, readonly, copy) NSString* method;

@@ -21,4 +21,13 @@
     }
     return self;
 }
+
+
++ (NSDictionary*)JSONKeyPathsByPropertyKey{
+    return @{@"jrpcId":@"id",
+             @"params":@"params",
+             @"version":@"jsonrpc",
+             @"method":@"method"};
+}
+
 @end
