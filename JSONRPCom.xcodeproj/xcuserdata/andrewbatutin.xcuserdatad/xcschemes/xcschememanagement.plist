@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>sndbx.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>00E06A101DD71D12004975B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00E06A2F1DD74B38004975B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

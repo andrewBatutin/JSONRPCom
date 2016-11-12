@@ -10,6 +10,12 @@
 		00E06A121DD71D12004975B4 /* JSONRPCom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E06A081DD71D11004975B4 /* JSONRPCom.framework */; };
 		00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
 		00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A0B1DD71D12004975B4 /* JSONRPCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E06A261DD7248F004975B4 /* JSONRPCRequset.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A241DD7248F004975B4 /* JSONRPCRequset.h */; };
+		00E06A271DD7248F004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
+		00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
+		00E06A2B1DD7396E004975B4 /* JSONRPCRequsetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */; };
+		00E06A331DD74B38004975B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A321DD74B38004975B4 /* main.m */; };
+		00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +28,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00E06A2E1DD74B38004975B4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E06A081DD71D11004975B4 /* JSONRPCom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONRPCom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E06A0B1DD71D12004975B4 /* JSONRPCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRPCom.h; sourceTree = "<group>"; };
@@ -29,6 +47,11 @@
 		00E06A111DD71D12004975B4 /* JSONRPComTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONRPComTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E06A161DD71D12004975B4 /* JSONRPComTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONRPComTests.m; sourceTree = "<group>"; };
 		00E06A181DD71D12004975B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E06A241DD7248F004975B4 /* JSONRPCRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCRequset.h; sourceTree = "<group>"; };
+		00E06A251DD7248F004975B4 /* JSONRPCRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequset.m; sourceTree = "<group>"; };
+		00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequsetTest.m; sourceTree = "<group>"; };
+		00E06A301DD74B38004975B4 /* sndbx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sndbx; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E06A321DD74B38004975B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +70,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00E06A2D1DD74B38004975B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		00E069FE1DD71D11004975B4 = {
 			isa = PBXGroup;
 			children = (
+				00E06A231DD7245A004975B4 /* Request */,
 				00E06A0A1DD71D11004975B4 /* JSONRPCom */,
 				00E06A151DD71D12004975B4 /* JSONRPComTests */,
+				00E06A311DD74B38004975B4 /* sndbx */,
 				00E06A091DD71D11004975B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +96,7 @@
 			children = (
 				00E06A081DD71D11004975B4 /* JSONRPCom.framework */,
 				00E06A111DD71D12004975B4 /* JSONRPComTests.xctest */,
+				00E06A301DD74B38004975B4 /* sndbx */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,10 +113,37 @@
 		00E06A151DD71D12004975B4 /* JSONRPComTests */ = {
 			isa = PBXGroup;
 			children = (
+				00E06A291DD7395C004975B4 /* Request */,
 				00E06A161DD71D12004975B4 /* JSONRPComTests.m */,
 				00E06A181DD71D12004975B4 /* Info.plist */,
 			);
 			path = JSONRPComTests;
+			sourceTree = "<group>";
+		};
+		00E06A231DD7245A004975B4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				00E06A241DD7248F004975B4 /* JSONRPCRequset.h */,
+				00E06A251DD7248F004975B4 /* JSONRPCRequset.m */,
+			);
+			name = Request;
+			path = JSONRPCom/Request;
+			sourceTree = "<group>";
+		};
+		00E06A291DD7395C004975B4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		00E06A311DD74B38004975B4 /* sndbx */ = {
+			isa = PBXGroup;
+			children = (
+				00E06A321DD74B38004975B4 /* main.m */,
+			);
+			path = sndbx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E06A261DD7248F004975B4 /* JSONRPCRequset.h in Headers */,
 				00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +197,23 @@
 			productReference = 00E06A111DD71D12004975B4 /* JSONRPComTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00E06A2F1DD74B38004975B4 /* sndbx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E06A341DD74B38004975B4 /* Build configuration list for PBXNativeTarget "sndbx" */;
+			buildPhases = (
+				00E06A2C1DD74B38004975B4 /* Sources */,
+				00E06A2D1DD74B38004975B4 /* Frameworks */,
+				00E06A2E1DD74B38004975B4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sndbx;
+			productName = sndbx;
+			productReference = 00E06A301DD74B38004975B4 /* sndbx */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +229,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					00E06A101DD71D12004975B4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4E4L42WQ49;
+						ProvisioningStyle = Automatic;
+					};
+					00E06A2F1DD74B38004975B4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4E4L42WQ49;
 						ProvisioningStyle = Automatic;
@@ -171,6 +254,7 @@
 			targets = (
 				00E06A071DD71D11004975B4 /* JSONRPCom */,
 				00E06A101DD71D12004975B4 /* JSONRPComTests */,
+				00E06A2F1DD74B38004975B4 /* sndbx */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E06A271DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +290,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */,
+				00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
+				00E06A2B1DD7396E004975B4 /* JSONRPCRequsetTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E06A2C1DD74B38004975B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E06A331DD74B38004975B4 /* main.m in Sources */,
+				00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +469,28 @@
 			};
 			name = Release;
 		};
+		00E06A351DD74B38004975B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00E06A361DD74B38004975B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = 4E4L42WQ49;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,6 +516,14 @@
 			buildConfigurations = (
 				00E06A201DD71D12004975B4 /* Debug */,
 				00E06A211DD71D12004975B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00E06A341DD74B38004975B4 /* Build configuration list for PBXNativeTarget "sndbx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E06A351DD74B38004975B4 /* Debug */,
+				00E06A361DD74B38004975B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
