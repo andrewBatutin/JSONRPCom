@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "JSONRPC.h"
+#import "JSONRPCId.h"
 #import "Mantle.h"
 
-@interface JSONRPCResponse : MTLModel <MTLJSONSerializing, JSONRPC>
+@interface JSONRPCResponse : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
 @property (nonatomic, readonly, copy) id result;
 

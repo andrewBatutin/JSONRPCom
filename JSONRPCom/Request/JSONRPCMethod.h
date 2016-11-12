@@ -1,5 +1,5 @@
 //
-//  JSONRPC.h
+//  JSONRPCMethod.h
 //  JSONRPCom
 //
 //  Created by andrew batutin on 11/12/16.
@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol JSONRPC <NSObject>
+@protocol JSONRPCMethod <NSObject>
 
-@property (nonatomic, readonly, copy) NSString* version;
+@property (nonatomic, readonly, copy) NSString* method;
+@property (nonatomic, readonly, strong) id params;
 
 @end

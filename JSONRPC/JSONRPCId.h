@@ -1,5 +1,5 @@
 //
-//  JSONRPC.h
+//  JSONRPCId.h
 //  JSONRPCom
 //
 //  Created by andrew batutin on 11/12/16.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol JSONRPC <NSObject>
+@protocol JSONRPCId <NSObject>
 
-@property (nonatomic, readonly, copy) NSString* version;
+@property (nonatomic, readonly, copy) NSString* jrpcId;
 
 @end

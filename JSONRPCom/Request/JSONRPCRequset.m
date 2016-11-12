@@ -10,6 +10,8 @@
 
 @implementation JSONRPCRequset
 
+@synthesize method = _method;
+@synthesize params = _params;
 @synthesize jrpcId = _jrpcId;
 @synthesize version = _version;
 

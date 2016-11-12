@@ -1,5 +1,5 @@
 //
-//  JSONRPCError.h
+//  JSONRPCNotification.h
 //  JSONRPCom
 //
 //  Created by andrew batutin on 11/12/16.
@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "JSONRPC.h"
-#import "JSONRPCId.h"
+#import "JSONRPCMethod.h"
 #import "Mantle.h"
 
-@interface JSONRPCError : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
-@property (nonatomic, readonly, copy) id error;
+@interface JSONRPCNotification : MTLModel <MTLJSONSerializing, JSONRPCMethod, JSONRPC>
 
 @end
