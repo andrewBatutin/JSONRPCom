@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */; };
+		00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
+		00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
+		00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B841DD7ABF700F4E6A8 /* JSONRPC.h */; };
+		00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */; };
+		00506B8A1DD7B29200F4E6A8 /* JSONRPCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B881DD7B29200F4E6A8 /* JSONRPCError.h */; };
+		00506B8B1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCError.m */; };
+		00506B8C1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCError.m */; };
+		00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */; };
 		00E06A121DD71D12004975B4 /* JSONRPCom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E06A081DD71D11004975B4 /* JSONRPCom.framework */; };
 		00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
 		00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A0B1DD71D12004975B4 /* JSONRPCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E06A261DD7248F004975B4 /* JSONRPCRequset.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A241DD7248F004975B4 /* JSONRPCRequset.h */; };
 		00E06A271DD7248F004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
 		00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
-		00E06A2B1DD7396E004975B4 /* JSONRPCRequsetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */; };
+		00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */; };
 		00E06A331DD74B38004975B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A321DD74B38004975B4 /* main.m */; };
 		00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
 		2D5C4315F7814ED030EC589C /* libPods-sndbx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */; };
@@ -44,6 +53,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
+		00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCResponse.m; sourceTree = "<group>"; };
+		00506B841DD7ABF700F4E6A8 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
+		00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponseTest.m; path = ../Request/JSONRPCResponseTest.m; sourceTree = "<group>"; };
+		00506B881DD7B29200F4E6A8 /* JSONRPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
+		00506B891DD7B29200F4E6A8 /* JSONRPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCError.m; sourceTree = "<group>"; };
+		00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorTest.m; sourceTree = "<group>"; };
 		00E06A081DD71D11004975B4 /* JSONRPCom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONRPCom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E06A0B1DD71D12004975B4 /* JSONRPCom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRPCom.h; sourceTree = "<group>"; };
 		00E06A0C1DD71D12004975B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +68,7 @@
 		00E06A181DD71D12004975B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E06A241DD7248F004975B4 /* JSONRPCRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCRequset.h; sourceTree = "<group>"; };
 		00E06A251DD7248F004975B4 /* JSONRPCRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequset.m; sourceTree = "<group>"; };
-		00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequsetTest.m; sourceTree = "<group>"; };
+		00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequestTest.m; sourceTree = "<group>"; };
 		00E06A301DD74B38004975B4 /* sndbx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sndbx; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E06A321DD74B38004975B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A41388C54EFD52CA3FD67E5 /* Pods-JSONRPCom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONRPCom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONRPCom/Pods-JSONRPCom.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,9 +111,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00506B7D1DD7AB8F00F4E6A8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */,
+				00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */,
+				00506B881DD7B29200F4E6A8 /* JSONRPCError.h */,
+				00506B891DD7B29200F4E6A8 /* JSONRPCError.m */,
+			);
+			name = Response;
+			path = JSONRPCom/Response;
+			sourceTree = "<group>";
+		};
+		00506B831DD7ABDA00F4E6A8 /* JSONRPC */ = {
+			isa = PBXGroup;
+			children = (
+				00506B841DD7ABF700F4E6A8 /* JSONRPC.h */,
+			);
+			path = JSONRPC;
+			sourceTree = "<group>";
+		};
+		00506B8D1DD7B31600F4E6A8 /* Respones */ = {
+			isa = PBXGroup;
+			children = (
+				00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */,
+				00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */,
+			);
+			path = Respones;
+			sourceTree = "<group>";
+		};
 		00E069FE1DD71D11004975B4 = {
 			isa = PBXGroup;
 			children = (
+				00506B831DD7ABDA00F4E6A8 /* JSONRPC */,
+				00506B7D1DD7AB8F00F4E6A8 /* Response */,
 				00E06A231DD7245A004975B4 /* Request */,
 				00E06A0A1DD71D11004975B4 /* JSONRPCom */,
 				00E06A151DD71D12004975B4 /* JSONRPComTests */,
@@ -130,6 +177,7 @@
 		00E06A151DD71D12004975B4 /* JSONRPComTests */ = {
 			isa = PBXGroup;
 			children = (
+				00506B8D1DD7B31600F4E6A8 /* Respones */,
 				00E06A291DD7395C004975B4 /* Request */,
 				00E06A161DD71D12004975B4 /* JSONRPComTests.m */,
 				00E06A181DD71D12004975B4 /* Info.plist */,
@@ -150,7 +198,7 @@
 		00E06A291DD7395C004975B4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				00E06A2A1DD7396E004975B4 /* JSONRPCRequsetTest.m */,
+				00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -194,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E06A261DD7248F004975B4 /* JSONRPCRequset.h in Headers */,
+				00506B8A1DD7B29200F4E6A8 /* JSONRPCError.h in Headers */,
 				00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */,
+				00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */,
+				00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +487,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
 				00E06A271DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
+				00506B8B1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +499,11 @@
 			files = (
 				00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */,
 				00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
-				00E06A2B1DD7396E004975B4 /* JSONRPCRequsetTest.m in Sources */,
+				00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */,
+				00506B8C1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */,
+				00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
+				00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */,
+				00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +728,7 @@
 				00E06A1E1DD71D12004975B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00E06A1F1DD71D12004975B4 /* Build configuration list for PBXNativeTarget "JSONRPComTests" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +737,7 @@
 				00E06A211DD71D12004975B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00E06A341DD74B38004975B4 /* Build configuration list for PBXNativeTarget "sndbx" */ = {
 			isa = XCConfigurationList;
@@ -687,6 +746,7 @@
 				00E06A361DD74B38004975B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

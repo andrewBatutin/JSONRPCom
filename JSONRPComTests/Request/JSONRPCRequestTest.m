@@ -9,11 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "JSONRPCRequset.h"
 
-@interface JSONRPCRequsetTest : XCTestCase
+@interface JSONRPCRequestTest : XCTestCase
 
 @end
 
-@implementation JSONRPCRequsetTest
+@implementation JSONRPCRequestTest
 
 - (void)testRequestSerializationSuccess{
     //{"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}

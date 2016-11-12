@@ -10,6 +10,9 @@
 
 @implementation JSONRPCRequset
 
+@synthesize jrpcId = _jrpcId;
+@synthesize version = _version;
+
 - (instancetype)initWithMethod:(NSString *)methodName params:(id)params version:(NSString*)version jrpcId:(NSString*)jrpcId{
     
     if (self == [super init]){
