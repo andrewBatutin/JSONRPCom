@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "JSONRPC.h"
 #import "JSONRPCId.h"
+#import "JSONRPCErrorModel.h"
 #import "Mantle.h"
 
 @interface JSONRPCErrorResponse : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
-@property (nonatomic, readonly, strong) id error;
+@property (nonatomic, readonly, strong) JSONRPCErrorModel* error;
 
-- (instancetype)initWithError:(id)error version:(NSString*)version jrpcId:(NSString*)jrpcId;
+- (instancetype)initWithError:(JSONRPCErrorModel*)error version:(NSString*)version jrpcId:(NSString*)jrpcId;
 
 @end

@@ -22,6 +22,9 @@
     return self;
 }
 
++ (NSValueTransformer *)errorJSONTransformer {
+    return [MTLJSONAdapter dictionaryTransformerWithModelClass:JSONRPCErrorModel.class];
+}
 
 + (NSDictionary*)JSONKeyPathsByPropertyKey{
     return @{@"jrpcId":@"id",

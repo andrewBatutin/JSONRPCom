@@ -129,5 +129,131 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/MTLJSONAdapter+Utils.m"
+            timestampString = "500758085.423598"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "+removeNSNullValuesFrom:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[MTLJSONAdapter(Utils) removeNSNullValuesFrom:]"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Utils/MTLJSONAdapter+Utils.m"
+                  timestampString = "500757327.658832"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "904">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[MTLJSONAdapter(Utils) removeNSNullValuesFrom:]"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Utils/MTLJSONAdapter+Utils.m"
+                  timestampString = "500757327.66073"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/MTLJSONAdapter.m"
+            timestampString = "500757728.750503"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "-JSONDictionaryFromModel:error:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTLJSONAdapter JSONDictionaryFromModel:error:]"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/MTLJSONAdapter.m"
+                  timestampString = "500758085.987841"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTLJSONAdapter JSONDictionaryFromModel:error:]"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/MTLJSONAdapter.m"
+                  timestampString = "500758085.989899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTLJSONAdapter JSONDictionaryFromModel:error:]"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/MTLJSONAdapter.m"
+                  timestampString = "500758086.004008"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTLJSONAdapter JSONDictionaryFromModel:error:]"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/MTLJSONAdapter.m"
+                  timestampString = "500758086.005354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "81">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "JSONRPCErrorResponse.h"
+#import "MTLJSONAdapter+Utils.h"
 
 @interface JSONRPCErrorTest : XCTestCase
 
@@ -23,7 +24,7 @@
     XCTAssertNil(error);
     XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
     XCTAssertTrue([sut.jrpcId isEqualToString:dict[@"id"]]);
-    XCTAssertTrue([sut.error isEqual:dict[@"error"]]);
+    XCTAssertTrue([[MTLJSONAdapter JSONDictionaryFromModelNoNil:sut.error error:nil] isEqual:dict[@"error"]]);
 }
 
 - (void)testErrorDeSerializationSuccess{
@@ -31,7 +32,8 @@
     NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
     NSError* error = nil;
     JSONRPCErrorResponse* sut = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
-    NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModel:sut error:&error];
+    error = nil;
+    NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModelNoNil:sut error:&error];
     XCTAssertNil(error);
     XCTAssertEqualObjects(dict, realResult);
 }
