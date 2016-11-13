@@ -24,6 +24,6 @@ typedef enum{
 @property (nonatomic, readonly, copy) NSString* message;
 @property (nonatomic, readonly, strong) id data;
 
-- (instancetype)initWithMessage:(NSString*)message data:(id)data errorCode:(JSONRPCErrorModelError)code;
+- (instancetype)initWithMessage:(NSString*)message data:(id<MTLJSONSerializing>)data errorCode:(JSONRPCErrorModelError)code;
 
 @end

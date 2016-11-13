@@ -28,7 +28,7 @@
 
 - (void)testErrorModelDeSerializationSuccess{
     //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
-    NSDictionary* dict =@{@"code": @-32601, @"message": @"Method not found", @"data":@"test_data"};
+    NSDictionary* dict =@{@"code": @-32601, @"message": @"Method not found", @"data":[NSURL URLWithString:@"www.google.com"]};
     NSError* error = nil;
     JSONRPCErrorModel* sut = [MTLJSONAdapter modelOfClass:[JSONRPCErrorModel class] fromJSONDictionary:dict error:&error];
     NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModel:sut error:&error];

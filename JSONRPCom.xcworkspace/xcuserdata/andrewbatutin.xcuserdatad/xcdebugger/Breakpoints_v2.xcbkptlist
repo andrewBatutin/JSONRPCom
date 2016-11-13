@@ -255,5 +255,213 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JSONRPComTests/Respones/JSONRPCErrorModelTest.m"
+            timestampString = "500758590.014183"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-testErrorModelInitSuccess"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "500759656.514015"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759660.658614"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "247">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759660.660631"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "500759908.96617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759918.238777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "367">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759918.241295"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "367">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "500759983.531989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759983.536397"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "659">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500759983.538344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "659">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+            timestampString = "500760133.996415"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "mtl_copyPropertyAttributes()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPComTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500760134.001002"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "2406">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mtl_copyPropertyAttributes"
+                  moduleName = "JSONRPCom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewbatutin/Documents/jsonrpcom/JSONRPCom/Pods/Mantle/Mantle/extobjc/EXTRuntimeExtensions.m"
+                  timestampString = "500760134.003198"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "2406">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
