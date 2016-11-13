@@ -21,7 +21,6 @@
         _version = version;
         _params = params;
         _jrpcId = jrpcId;
-        
     }
     return self;
 }
