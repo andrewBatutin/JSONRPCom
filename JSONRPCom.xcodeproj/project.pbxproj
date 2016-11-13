@@ -140,7 +140,8 @@
 				003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */,
 				003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */,
 			);
-			path = Utils;
+			name = Utils;
+			path = JSONRPCom/Utils;
 			sourceTree = "<group>";
 		};
 		00506B7D1DD7AB8F00F4E6A8 /* Response */ = {
@@ -163,7 +164,8 @@
 				00506B841DD7ABF700F4E6A8 /* JSONRPC.h */,
 				00506B901DD7B4AF00F4E6A8 /* JSONRPCId.h */,
 			);
-			path = JSONRPC;
+			name = JSONRPC;
+			path = JSONRPCom/JSONRPC;
 			sourceTree = "<group>";
 		};
 		00506B8D1DD7B31600F4E6A8 /* Respones */ = {
