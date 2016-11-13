@@ -14,4 +14,7 @@
 
 @interface JSONRPCNotification : MTLModel <MTLJSONSerializing, JSONRPCMethod, JSONRPC>
 
+- (instancetype)initWithMethod:(NSString *)methodName params:(id)params version:(NSString*)version;
+
+
 @end

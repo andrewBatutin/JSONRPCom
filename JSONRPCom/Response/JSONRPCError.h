@@ -13,6 +13,8 @@
 
 @interface JSONRPCError : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
-@property (nonatomic, readonly, copy) id error;
+@property (nonatomic, readonly, strong) id error;
+
+- (instancetype)initWithError:(id)error version:(NSString*)version jrpcId:(NSString*)jrpcId;
 
 @end

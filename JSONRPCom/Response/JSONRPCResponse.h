@@ -13,6 +13,8 @@
 
 @interface JSONRPCResponse : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
-@property (nonatomic, readonly, copy) id result;
+@property (nonatomic, readonly, strong) id result;
+
+- (instancetype)initWithResult:(id)result version:(NSString*)version jrpcId:(NSString*)jrpcId;
 
 @end

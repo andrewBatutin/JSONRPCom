@@ -13,6 +13,16 @@
 @synthesize jrpcId = _jrpcId;
 @synthesize version = _version;
 
+- (instancetype)initWithResult:(id)result version:(NSString*)version jrpcId:(NSString*)jrpcId{
+    if (self == [super init]){
+        _version = version;
+        _result = result;
+        _jrpcId = jrpcId;
+    }
+    return self;
+}
+
+
 + (NSDictionary*)JSONKeyPathsByPropertyKey{
     return @{@"jrpcId":@"id",
              @"result":@"result",

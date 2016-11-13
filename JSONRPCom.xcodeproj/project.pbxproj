@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */; };
 		00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */; };
 		00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
 		00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
@@ -58,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCNotificationTest.m; path = ../Respones/JSONRPCNotificationTest.m; sourceTree = "<group>"; };
 		00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
 		00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCResponse.m; sourceTree = "<group>"; };
 		00506B841DD7ABF700F4E6A8 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		00E06A291DD7395C004975B4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */,
 				00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */,
 			);
 			path = Request;
@@ -520,6 +523,7 @@
 				00506B8C1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */,
 				00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
 				00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */,
+				003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */,
 				00506B961DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */,
 				00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */,
 			);

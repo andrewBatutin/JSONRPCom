@@ -37,6 +37,14 @@
     XCTAssertTrue([sut.result isEqual:dict[@"result"]]);
 }
 
+- (void)testInitSuccesfull{
+    NSDictionary* dict =@{@"jsonrpc":@"2.0", @"result": @19, @"id": @"1"};
+    JSONRPCResponse* sut = [[JSONRPCResponse alloc] initWithResult:dict[@"result"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
+    XCTAssertNotNil(sut);
+    XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
+    XCTAssertTrue([sut.jrpcId isEqualToString:dict[@"id"]]);
+    XCTAssertTrue([sut.result isEqual:dict[@"result"]]);
+}
 
 
 @end

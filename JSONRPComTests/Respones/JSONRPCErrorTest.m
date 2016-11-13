@@ -26,7 +26,6 @@
     XCTAssertTrue([sut.error isEqual:dict[@"error"]]);
 }
 
-
 - (void)testErrorDeSerializationSuccess{
     //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
     NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
@@ -36,5 +35,17 @@
     XCTAssertNil(error);
     XCTAssertEqualObjects(dict, realResult);
 }
+
+- (void)testErrorInitSuccess{
+    //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
+    NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
+    NSError* error = nil;
+    JSONRPCError* sut = [[JSONRPCError alloc] initWithError:dict[@"error"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
+    XCTAssertNil(error);
+    XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
+    XCTAssertTrue([sut.jrpcId isEqualToString:dict[@"id"]]);
+    XCTAssertTrue([sut.error isEqual:dict[@"error"]]);
+}
+
 
 @end
