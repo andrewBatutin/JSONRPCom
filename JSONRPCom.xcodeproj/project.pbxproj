@@ -13,9 +13,9 @@
 		00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
 		00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B841DD7ABF700F4E6A8 /* JSONRPC.h */; };
 		00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */; };
-		00506B8A1DD7B29200F4E6A8 /* JSONRPCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B881DD7B29200F4E6A8 /* JSONRPCError.h */; };
-		00506B8B1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCError.m */; };
-		00506B8C1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCError.m */; };
+		00506B8A1DD7B29200F4E6A8 /* JSONRPCErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B881DD7B29200F4E6A8 /* JSONRPCErrorResponse.h */; };
+		00506B8B1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */; };
+		00506B8C1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */; };
 		00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */; };
 		00506B911DD7B4AF00F4E6A8 /* JSONRPCId.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B901DD7B4AF00F4E6A8 /* JSONRPCId.h */; };
 		00506B941DD7B51700F4E6A8 /* JSONRPCNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B921DD7B51700F4E6A8 /* JSONRPCNotification.h */; };
@@ -64,8 +64,8 @@
 		00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCResponse.m; sourceTree = "<group>"; };
 		00506B841DD7ABF700F4E6A8 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
 		00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponseTest.m; path = ../Request/JSONRPCResponseTest.m; sourceTree = "<group>"; };
-		00506B881DD7B29200F4E6A8 /* JSONRPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
-		00506B891DD7B29200F4E6A8 /* JSONRPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCError.m; sourceTree = "<group>"; };
+		00506B881DD7B29200F4E6A8 /* JSONRPCErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorResponse.h; sourceTree = "<group>"; };
+		00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorResponse.m; sourceTree = "<group>"; };
 		00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorTest.m; sourceTree = "<group>"; };
 		00506B901DD7B4AF00F4E6A8 /* JSONRPCId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCId.h; sourceTree = "<group>"; };
 		00506B921DD7B51700F4E6A8 /* JSONRPCNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCNotification.h; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 			children = (
 				00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */,
 				00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */,
-				00506B881DD7B29200F4E6A8 /* JSONRPCError.h */,
-				00506B891DD7B29200F4E6A8 /* JSONRPCError.m */,
+				00506B881DD7B29200F4E6A8 /* JSONRPCErrorResponse.h */,
+				00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */,
 			);
 			name = Response;
 			path = JSONRPCom/Response;
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E06A261DD7248F004975B4 /* JSONRPCRequset.h in Headers */,
-				00506B8A1DD7B29200F4E6A8 /* JSONRPCError.h in Headers */,
+				00506B8A1DD7B29200F4E6A8 /* JSONRPCErrorResponse.h in Headers */,
 				00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */,
 				00506B911DD7B4AF00F4E6A8 /* JSONRPCId.h in Headers */,
 				00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */,
@@ -509,7 +509,7 @@
 				00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
 				00E06A271DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
 				00506B951DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */,
-				00506B8B1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */,
+				00506B8B1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +520,7 @@
 				00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */,
 				00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */,
 				00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */,
-				00506B8C1DD7B29200F4E6A8 /* JSONRPCError.m in Sources */,
+				00506B8C1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */,
 				00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
 				00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */,
 				003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */,

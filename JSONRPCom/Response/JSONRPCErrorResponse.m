@@ -6,9 +6,9 @@
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
-#import "JSONRPCError.h"
+#import "JSONRPCErrorResponse.h"
 
-@implementation JSONRPCError
+@implementation JSONRPCErrorResponse
 
 @synthesize jrpcId = _jrpcId;
 @synthesize version = _version;

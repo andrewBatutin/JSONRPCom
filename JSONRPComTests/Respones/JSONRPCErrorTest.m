@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "JSONRPCError.h"
+#import "JSONRPCErrorResponse.h"
 
 @interface JSONRPCErrorTest : XCTestCase
 
@@ -19,7 +19,7 @@
     //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
     NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
     NSError* error = nil;
-    JSONRPCError* sut = [MTLJSONAdapter modelOfClass:[JSONRPCError class] fromJSONDictionary:dict error:&error];
+    JSONRPCErrorResponse* sut = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
     XCTAssertNil(error);
     XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
     XCTAssertTrue([sut.jrpcId isEqualToString:dict[@"id"]]);
@@ -30,7 +30,7 @@
     //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
     NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
     NSError* error = nil;
-    JSONRPCError* sut = [MTLJSONAdapter modelOfClass:[JSONRPCError class] fromJSONDictionary:dict error:&error];
+    JSONRPCErrorResponse* sut = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
     NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModel:sut error:&error];
     XCTAssertNil(error);
     XCTAssertEqualObjects(dict, realResult);
@@ -40,7 +40,7 @@
     //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
     NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found"}, @"id": @"1"};
     NSError* error = nil;
-    JSONRPCError* sut = [[JSONRPCError alloc] initWithError:dict[@"error"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
+    JSONRPCErrorResponse* sut = [[JSONRPCErrorResponse alloc] initWithError:dict[@"error"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
     XCTAssertNil(error);
     XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
     XCTAssertTrue([sut.jrpcId isEqualToString:dict[@"id"]]);

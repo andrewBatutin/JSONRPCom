@@ -11,7 +11,7 @@
 #import "JSONRPCId.h"
 #import "Mantle.h"
 
-@interface JSONRPCError : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
+@interface JSONRPCErrorResponse : MTLModel <MTLJSONSerializing, JSONRPC, JSONRPCId>
 
 @property (nonatomic, readonly, strong) id error;
 
