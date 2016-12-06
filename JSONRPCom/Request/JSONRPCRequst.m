@@ -6,9 +6,9 @@
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
-#import "JSONRPCRequset.h"
+#import "JSONRPCRequst.h"
 
-@implementation JSONRPCRequset
+@implementation JSONRPCRequst
 
 @synthesize method = _method;
 @synthesize params = _params;

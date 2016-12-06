@@ -10,7 +10,7 @@
 
 @implementation MTLJSONAdapter (Utils)
 
-+ (NSDictionary *)JSONDictionaryFromModelNoNil:(id<MTLJSONSerializing>)model error:(NSError **)error{
++ (NSDictionary*)JSONDictionaryFromModelNoNil:(id<MTLJSONSerializing>)model error:(NSError **)error{
     NSDictionary *originalDict = [MTLJSONAdapter JSONDictionaryFromModel:model error:error];
     
     if (!originalDict){
