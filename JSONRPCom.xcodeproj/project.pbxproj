@@ -11,6 +11,14 @@
 		000931CC1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CA1DF6F12B006FB3ED /* JSONRPCDeSerialization.m */; };
 		000931CD1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CA1DF6F12B006FB3ED /* JSONRPCDeSerialization.m */; };
 		000931D01DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CF1DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m */; };
+		000931D31DF6FC4B006FB3ED /* NSDictionary+ToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931D11DF6FC4B006FB3ED /* NSDictionary+ToString.h */; };
+		000931D41DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */; };
+		000931D51DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */; };
+		000931D81DF6FCD3006FB3ED /* NSDictionaryToStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D71DF6FCD3006FB3ED /* NSDictionaryToStringTest.m */; };
+		000931DB1DF70223006FB3ED /* NSString+ToJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931D91DF70223006FB3ED /* NSString+ToJSONDictionary.h */; };
+		000931DC1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */; };
+		000931DD1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */; };
+		000931DF1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DE1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m */; };
 		003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */; };
 		003C979D1DD8D95400F24463 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */; };
 		003C979E1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */; };
@@ -73,6 +81,12 @@
 		000931C91DF6F12B006FB3ED /* JSONRPCDeSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCDeSerialization.h; sourceTree = "<group>"; };
 		000931CA1DF6F12B006FB3ED /* JSONRPCDeSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCDeSerialization.m; sourceTree = "<group>"; };
 		000931CF1DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCDeSerializationTest.m; sourceTree = "<group>"; };
+		000931D11DF6FC4B006FB3ED /* NSDictionary+ToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ToString.h"; sourceTree = "<group>"; };
+		000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ToString.m"; sourceTree = "<group>"; };
+		000931D71DF6FCD3006FB3ED /* NSDictionaryToStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryToStringTest.m; sourceTree = "<group>"; };
+		000931D91DF70223006FB3ED /* NSString+ToJSONDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ToJSONDictionary.h"; sourceTree = "<group>"; };
+		000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ToJSONDictionary.m"; sourceTree = "<group>"; };
+		000931DE1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringToJSONDictionaryTest.m; sourceTree = "<group>"; };
 		003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCNotificationTest.m; path = ../Respones/JSONRPCNotificationTest.m; sourceTree = "<group>"; };
 		003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorModel.h; sourceTree = "<group>"; };
 		003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorModel.m; sourceTree = "<group>"; };
@@ -160,11 +174,24 @@
 			path = Serialization;
 			sourceTree = "<group>";
 		};
+		000931D61DF6FC8E006FB3ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				000931D71DF6FCD3006FB3ED /* NSDictionaryToStringTest.m */,
+				000931DE1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		003C97A21DD8E43C00F24463 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */,
 				003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */,
+				000931D11DF6FC4B006FB3ED /* NSDictionary+ToString.h */,
+				000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */,
+				000931D91DF70223006FB3ED /* NSString+ToJSONDictionary.h */,
+				000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */,
 			);
 			name = Utils;
 			path = JSONRPCom/Utils;
@@ -253,6 +280,7 @@
 		00E06A151DD71D12004975B4 /* JSONRPComTests */ = {
 			isa = PBXGroup;
 			children = (
+				000931D61DF6FC8E006FB3ED /* Utils */,
 				000931CE1DF6F7BB006FB3ED /* Serialization */,
 				00506B8D1DD7B31600F4E6A8 /* Respones */,
 				00E06A291DD7395C004975B4 /* Request */,
@@ -324,6 +352,7 @@
 			files = (
 				003C97A51DD8E45200F24463 /* MTLJSONAdapter+Utils.h in Headers */,
 				000931CB1DF6F12B006FB3ED /* JSONRPCDeSerialization.h in Headers */,
+				000931D31DF6FC4B006FB3ED /* NSDictionary+ToString.h in Headers */,
 				00E06A261DD7248F004975B4 /* JSONRPCRequst.h in Headers */,
 				00506B8A1DD7B29200F4E6A8 /* JSONRPCErrorResponse.h in Headers */,
 				00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */,
@@ -332,6 +361,7 @@
 				00506B911DD7B4AF00F4E6A8 /* JSONRPCId.h in Headers */,
 				00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */,
 				00506B981DD7B59F00F4E6A8 /* JSONRPCMethod.h in Headers */,
+				000931DB1DF70223006FB3ED /* NSString+ToJSONDictionary.h in Headers */,
 				00506B941DD7B51700F4E6A8 /* JSONRPCNotification.h in Headers */,
 				00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */,
 			);
@@ -581,6 +611,8 @@
 				00506B951DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */,
 				00506B8B1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */,
 				000931CC1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */,
+				000931DC1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */,
+				000931D41DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */,
 				003C97A61DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,14 +625,18 @@
 				000931D01DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m in Sources */,
 				00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */,
 				00E06A281DD7248F004975B4 /* JSONRPCRequst.m in Sources */,
+				000931DF1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m in Sources */,
 				00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */,
 				00506B8C1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */,
+				000931D81DF6FCD3006FB3ED /* NSDictionaryToStringTest.m in Sources */,
 				003C97A71DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */,
 				003C97A11DD8DD6800F24463 /* JSONRPCErrorModelTest.m in Sources */,
 				00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
 				00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */,
 				003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */,
 				000931CD1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */,
+				000931DD1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */,
+				000931D51DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */,
 				00506B961DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */,
 				00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */,
 			);
