@@ -15,11 +15,14 @@
     return nil;
 }
 
-+ (void)serializeString:(NSString*)message  withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
++ (void)deSerializeString:(NSString*)message  withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
                                             orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse
                                             serializationError:(void (^)(NSError* error))error{
+    NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
+    JSONRPCRequst* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCRequst class] fromJSONDictionary:dict error:nil];
+    request(expectedResult);
 }
 
 @end

@@ -14,7 +14,7 @@
 
 @interface JSONRPCDeSerialization : NSObject
 
-+ (void)serializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
++ (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
                                             orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse
