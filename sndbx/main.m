@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONRPCRequset.h"
+
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+    NSString* (^testBlock)(int a) = ^NSString*(int a){ return @"TEST"; };
+    NSString* result = testBlock(2);
+    
     return 0;
 }

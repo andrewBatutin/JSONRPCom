@@ -15,6 +15,7 @@
 		003C97A51DD8E45200F24463 /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */; };
 		003C97A61DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
 		003C97A71DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
+		003C97AA1DD9F71D00F24463 /* JSONRPCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A91DD9F71D00F24463 /* JSONRPCommunication.h */; };
 		00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */; };
 		00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
 		00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
@@ -37,7 +38,6 @@
 		00E06A281DD7248F004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
 		00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */; };
 		00E06A331DD74B38004975B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A321DD74B38004975B4 /* main.m */; };
-		00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequset.m */; };
 		2D5C4315F7814ED030EC589C /* libPods-sndbx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */; };
 		B15DF64EE4ECB0AF530EA75A /* libPods-JSONRPComTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */; };
 		D0E5E1B84CECB0EFE438BF5D /* libPods-JSONRPCom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9C03040C49B3586084817 /* libPods-JSONRPCom.a */; };
@@ -72,6 +72,7 @@
 		003C97A01DD8DD6800F24463 /* JSONRPCErrorModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorModelTest.m; sourceTree = "<group>"; };
 		003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLJSONAdapter+Utils.h"; sourceTree = "<group>"; };
 		003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLJSONAdapter+Utils.m"; sourceTree = "<group>"; };
+		003C97A91DD9F71D00F24463 /* JSONRPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCommunication.h; sourceTree = "<group>"; };
 		00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
 		00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCResponse.m; sourceTree = "<group>"; };
 		00506B841DD7ABF700F4E6A8 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
@@ -144,6 +145,15 @@
 			path = JSONRPCom/Utils;
 			sourceTree = "<group>";
 		};
+		003C97A81DD9F6FA00F24463 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				003C97A91DD9F71D00F24463 /* JSONRPCommunication.h */,
+			);
+			name = Communication;
+			path = JSONRPCom/Communication;
+			sourceTree = "<group>";
+		};
 		00506B7D1DD7AB8F00F4E6A8 /* Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +191,7 @@
 		00E069FE1DD71D11004975B4 = {
 			isa = PBXGroup;
 			children = (
+				003C97A81DD9F6FA00F24463 /* Communication */,
 				003C97A21DD8E43C00F24463 /* Utils */,
 				00506B831DD7ABDA00F4E6A8 /* JSONRPC */,
 				00506B7D1DD7AB8F00F4E6A8 /* Response */,
@@ -289,6 +300,7 @@
 				00506B8A1DD7B29200F4E6A8 /* JSONRPCErrorResponse.h in Headers */,
 				00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */,
 				003C979D1DD8D95400F24463 /* JSONRPCErrorModel.h in Headers */,
+				003C97AA1DD9F71D00F24463 /* JSONRPCommunication.h in Headers */,
 				00506B911DD7B4AF00F4E6A8 /* JSONRPCId.h in Headers */,
 				00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */,
 				00506B981DD7B59F00F4E6A8 /* JSONRPCMethod.h in Headers */,
@@ -568,7 +580,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E06A331DD74B38004975B4 /* main.m in Sources */,
-				00E06A371DD74B79004975B4 /* JSONRPCRequset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
