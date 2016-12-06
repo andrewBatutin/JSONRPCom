@@ -4,8 +4,8 @@ Pod::Spec.new do |s|
   s.summary      = "JSON RPC implementation"
 
   s.homepage     = "https://github.com/andrewBatutin/JSONRPCom"
-  s.license      = 'MIT'
-  s.author       = { "GitHub" => "support@github.com" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "andrewBatutin" => "abatutin@gmail.com" }
 
   s.source       = { :git => "https://github.com/github/JSONRPCom.git", :tag => "0.0.1" }
   s.source_files = 'JSONRPCom/**/*'
