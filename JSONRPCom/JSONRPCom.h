@@ -22,7 +22,9 @@ FOUNDATION_EXPORT const unsigned char JSONRPComVersionString[];
 #import <JSONRPCom/JSONRPCResponse.h>
 #import <JSONRPCom/JSONRPCErrorResponse.h>
 #import <JSONRPCom/JSONRPCErrorModel.h>
-#import <JSONRPCom/JSONRPCRequset.h>
+#import <JSONRPCom/JSONRPCRequst.h>
 #import <JSONRPCom/JSONRPCNotification.h>
 #import <JSONRPCom/JSONRPCMethod.h>
+#import <JSONRPCom/JSONRPCDeSerialization.h>
+#import <JSONRPCom/JSONRPCSerialization.h>
 
