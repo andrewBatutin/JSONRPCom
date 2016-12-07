@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "JSONRPCom"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "JSON RPC implementation"
 
   s.homepage     = "https://github.com/andrewBatutin/JSONRPCom"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "andrewBatutin" => "abatutin@gmail.com" }
 
-  s.source       = { :git => "https://github.com/andrewBatutin/JSONRPCom.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/andrewBatutin/JSONRPCom.git", :tag => s.version }
   s.source_files = 'JSONRPCom/**/*'
   s.framework    = 'Foundation'
 
