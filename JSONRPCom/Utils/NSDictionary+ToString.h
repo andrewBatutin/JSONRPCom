@@ -10,6 +10,6 @@
 
 @interface NSDictionary (ToString)
 
-- (NSString*)toJsonString;
+- (NSString*)toJsonStringWithError:(NSError **)error;
 
 @end

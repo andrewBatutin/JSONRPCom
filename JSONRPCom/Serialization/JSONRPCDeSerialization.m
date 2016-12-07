@@ -5,13 +5,14 @@
 //  Created by andrew batutin on 12/6/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
+// I'm aware that it looks a bit strange
+//
+
 
 #import "JSONRPCDeSerialization.h"
 #import "NSString+ToJSONDictionary.h"
 
 @interface JSONRPCDeSerialization ()
-
-
 
 @end
 
@@ -81,6 +82,19 @@
     };
 }
 
++ (NSDictionary*)serializationMappingwithJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
+                                      orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
+                                  orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
+                                         orJSONRPCError:(void (^)(JSONRPCErrorResponse* data))errorResponse
+                                     serializationError:(void (^)(NSError* error))serializationError{
+    NSMutableDictionary* serializationMapping = @{}.mutableCopy;
+    [serializationMapping setObject:[self requestValue:request serializationError:serializationError] forKey:[self requestKey]];
+    [serializationMapping setObject:[self responseValue:response serializationError:serializationError] forKey:[self responseKey]];
+    [serializationMapping setObject:[self notificationValue:notification serializationError:serializationError] forKey:[self notificationKey]];
+    [serializationMapping setObject:[self errorResponseValue:errorResponse serializationError:serializationError] forKey:[self errorResponseKey]];
+    return serializationMapping.copy;
+}
+
 + (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
@@ -95,11 +109,7 @@
         return;
     }
     
-    NSMutableDictionary* serializationMapping = @{}.mutableCopy;
-    [serializationMapping setObject:[self requestValue:request serializationError:serializationError] forKey:[self requestKey]];
-    [serializationMapping setObject:[self responseValue:response serializationError:serializationError] forKey:[self responseKey]];
-    [serializationMapping setObject:[self notificationValue:notification serializationError:serializationError] forKey:[self notificationKey]];
-    [serializationMapping setObject:[self errorResponseValue:errorResponse serializationError:serializationError] forKey:[self errorResponseKey]];
+    NSDictionary* serializationMapping = [self serializationMappingwithJSONRPCRequset:request orJSONRPCResponse:response orJSONRPCNotification:notification orJSONRPCError:errorResponse serializationError:serializationError];
     
     for ( BOOL (^isKeyValidForMessage)(NSDictionary*) in [serializationMapping allKeys] ){
         if (isKeyValidForMessage(messageDict)){

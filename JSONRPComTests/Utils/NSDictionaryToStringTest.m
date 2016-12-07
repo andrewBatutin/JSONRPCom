@@ -20,7 +20,7 @@
     NSDictionary* sut = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @1};
     
     NSDictionary* expectedResult = [NSJSONSerialization JSONObjectWithData:[input dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-    NSDictionary* result = [NSJSONSerialization JSONObjectWithData:[[sut toJsonString] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
+    NSDictionary* result = [NSJSONSerialization JSONObjectWithData:[[sut toJsonStringWithError:nil] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
     
     XCTAssertEqualObjects(expectedResult, result);
 }

@@ -10,16 +10,17 @@
 
 @implementation NSDictionary (ToString)
 
-- (NSString*)toJsonString{
+- (NSString*)toJsonStringWithError:(NSError **)error{
     if (![NSJSONSerialization isValidJSONObject:self]){
+        *error = [NSError errorWithDomain:@"json parse error" code:-32700 userInfo:@{@"reason":@"invalid fot JSON serialization"}];
         return nil;
     }
-    NSError* error = nil;
-    NSData* data = [NSJSONSerialization dataWithJSONObject:self options:0 error:&error];
-    if (error){
-        return nil;
-    }
+    
+    NSData* data = [NSJSONSerialization dataWithJSONObject:self options:0 error:error];
     NSString* result =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    if (!result){
+        *error = [NSError errorWithDomain:@"json parse error" code:-32700 userInfo:@{@"reason":@"unable to create string from JSON"}];
+    }
     return result;
 }
 
