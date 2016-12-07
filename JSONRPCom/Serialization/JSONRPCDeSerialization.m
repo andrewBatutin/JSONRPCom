@@ -29,6 +29,12 @@
     };
 }
 
++ (BOOL (^)(NSDictionary*))responseKey{
+    return ^BOOL(NSDictionary* dict){
+        return ( [[dict allKeys] containsObject:@"id"] && [[dict allKeys] containsObject:@"result"] );
+    };
+}
+
 + (void (^)(NSDictionary*))requestValue:(void (^)(JSONRPCRequst* data))request serializationError:(void (^)(NSError* error))serializationError{
     return ^(NSDictionary* dict){
         [self parseJSON:dict forModel:[JSONRPCRequst class] withResult:^(id<JSONRPC> entity) {
@@ -43,6 +49,16 @@
     return ^(NSDictionary* dict){
         [self parseJSON:dict forModel:[JSONRPCNotification class] withResult:^(id<JSONRPC> entity) {
             notification((JSONRPCNotification*)entity);
+        } serializationError:^(NSError *error) {
+            serializationError(error);
+        }];
+    };
+}
+
++ (void (^)(NSDictionary*))responseValue:(void (^)(JSONRPCResponse* data))response serializationError:(void (^)(NSError* error))serializationError{
+    return ^(NSDictionary* dict){
+        [self parseJSON:dict forModel:[JSONRPCResponse class] withResult:^(id<JSONRPC> entity) {
+            response((JSONRPCResponse*)entity);
         } serializationError:^(NSError *error) {
             serializationError(error);
         }];
@@ -65,6 +81,7 @@
     
     NSMutableDictionary* serializationMapping = @{}.mutableCopy;
     [serializationMapping setObject:[self requestValue:request serializationError:serializationError] forKey:[self requestKey]];
+    [serializationMapping setObject:[self responseValue:response serializationError:serializationError] forKey:[self responseKey]];
     [serializationMapping setObject:[self notificationValue:notification serializationError:serializationError] forKey:[self notificationKey]];
     
     for ( BOOL (^isKeyValidForMessage)(NSDictionary*) in [serializationMapping allKeys] ){
@@ -74,6 +91,9 @@
             return;
         }
     }
+    
+    parseError = [NSError errorWithDomain:@"Parsing Error" code:-32700 userInfo:@{@"reason":@"unable to map message to RPC entity"}];
+    serializationError(parseError);
 }
 
 + (void)parseJSON:(NSDictionary*)json forModel:(Class)modelOfClass withResult:(void (^)(id<JSONRPC>entity))block

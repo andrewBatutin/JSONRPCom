@@ -108,4 +108,29 @@
     }];
 }
 
+- (void)testSuccesfullDeserializtionOfResponse{
+    NSString* testData = @"{\"jsonrpc\": \"2.0\", \"result\": 19, \"id\": \"1\"}";
+    NSDictionary* dict = @{@"jsonrpc":@"2.0", @"result":@19, @"id":@"1"};
+    NSError* error = nil;
+    JSONRPCResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCResponse class] fromJSONDictionary:dict error:&error];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               [expectation fulfill];
+                               XCTAssertEqualObjects(data, expectedResult);
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } serializationError:^(NSError *error) {
+                               XCTFail(@"shouldn't be here");
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
+
 @end
