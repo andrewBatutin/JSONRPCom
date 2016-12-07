@@ -49,5 +49,15 @@
     XCTAssertTrue([sut.error isEqual:dict[@"error"]]);
 }
 
+- (void)testErrorDeSerializationSuccessWithNullID{
+    //{"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": null}
+    NSDictionary* dict =@{@"jsonrpc":@"2.0", @"error": @{@"code": @-32601, @"message": @"Method not found", @"data" : [NSNull null]}, @"id": [NSNull null]};
+    NSError* error = nil;
+    JSONRPCErrorResponse* sut = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
+    error = nil;
+    NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModel:sut error:&error];
+    XCTAssertNil(error);
+    XCTAssertEqualObjects(dict, realResult);
+}
 
 @end

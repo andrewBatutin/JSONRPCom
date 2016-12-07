@@ -35,6 +35,12 @@
     };
 }
 
++ (BOOL (^)(NSDictionary*))errorResponseKey{
+    return ^BOOL(NSDictionary* dict){
+        return ( [[dict allKeys] containsObject:@"error"] );
+    };
+}
+
 + (void (^)(NSDictionary*))requestValue:(void (^)(JSONRPCRequst* data))request serializationError:(void (^)(NSError* error))serializationError{
     return ^(NSDictionary* dict){
         [self parseJSON:dict forModel:[JSONRPCRequst class] withResult:^(id<JSONRPC> entity) {
@@ -65,6 +71,16 @@
     };
 }
 
++ (void (^)(NSDictionary*))errorResponseValue:(void (^)(JSONRPCErrorResponse* data))errorResponse serializationError:(void (^)(NSError* error))serializationError{
+    return ^(NSDictionary* dict){
+        [self parseJSON:dict forModel:[JSONRPCErrorResponse class] withResult:^(id<JSONRPC> entity) {
+            errorResponse((JSONRPCErrorResponse*)entity);
+        } serializationError:^(NSError *error) {
+            serializationError(error);
+        }];
+    };
+}
+
 + (void)deSerializeString:(NSString*)message withJSONRPCRequset:(void (^)(JSONRPCRequst* data))request
                                             orJSONRPCResponse:(void (^)(JSONRPCResponse* data))response
                                             orJSONRPCNotification:(void (^)(JSONRPCNotification* data))notification
@@ -83,6 +99,7 @@
     [serializationMapping setObject:[self requestValue:request serializationError:serializationError] forKey:[self requestKey]];
     [serializationMapping setObject:[self responseValue:response serializationError:serializationError] forKey:[self responseKey]];
     [serializationMapping setObject:[self notificationValue:notification serializationError:serializationError] forKey:[self notificationKey]];
+    [serializationMapping setObject:[self errorResponseValue:errorResponse serializationError:serializationError] forKey:[self errorResponseKey]];
     
     for ( BOOL (^isKeyValidForMessage)(NSDictionary*) in [serializationMapping allKeys] ){
         if (isKeyValidForMessage(messageDict)){

@@ -132,5 +132,53 @@
     }];
 }
 
+- (void)testSuccesfullDeserializtionOfError{
+    NSString* testData = @"{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -32601, \"message\": \"Method not found\"}, \"id\": \"1\"}";
+    NSDictionary* dict = @{@"jsonrpc":@"2.0", @"error": @{@"code": @(-32601), @"message": @"Method not found"}, @"id":@"1"};
+    NSError* error = nil;
+    JSONRPCErrorResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               [expectation fulfill];
+                               XCTAssertEqualObjects(data, expectedResult);
+                           } serializationError:^(NSError *error) {
+                               XCTFail(@"shouldn't be here");
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
+- (void)testSuccesfullDeserializtionOfErrorForNotification{
+    NSString* testData = @"{\"jsonrpc\": \"2.0\", \"error\": {\"code\": -32601, \"message\": \"Method not found\"}, \"id\": null}";
+    NSDictionary* dict = @{@"jsonrpc":@"2.0", @"error": @{@"code": @(-32601), @"message": @"Method not found"}, @"id":[NSNull null]};
+    NSError* error = nil;
+    JSONRPCErrorResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               [expectation fulfill];
+                               XCTAssertEqualObjects(data, expectedResult);
+                           } serializationError:^(NSError *error) {
+                               XCTFail(@"shouldn't be here");
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
 
 @end
