@@ -15,7 +15,7 @@
 
 @implementation JSONRPCDeSerializationTest
 
-- (void)testDeserializtion{
+- (void)testSuccesfullDeserializtionOfRequest{
     NSString* testData = @"{\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23], \"id\": \"1\"}";
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
     NSError* error = nil;
@@ -29,6 +29,75 @@
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCNotification:^(JSONRPCNotification *data) {
                                XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } serializationError:^(NSError *error) {
+                               XCTFail(@"shouldn't be here");
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
+- (void)testUnSuccesfullDeserializtionOfRequestWithWrongParamType{
+    NSString* testData = @"{\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23], \"id\": 1}";
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } serializationError:^(NSError *error) {
+                               [expectation fulfill];
+                               XCTAssertNotNil(error);
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
+- (void)testUnSuccesfullDeserializtionOfRequestWithInvalidJson{
+    NSString* testData = @"}\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23], \"id\": \"1\"}";
+    
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCError:^(JSONRPCErrorResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } serializationError:^(NSError *error) {
+                               [expectation fulfill];
+                               XCTAssertNotNil(error);
+                           }];
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError * _Nullable error) {
+        NSLog(@"no callback was called");
+    }];
+}
+
+
+- (void)testSuccesfullDeserializtionOfNotification{
+    NSString* testData = @"{\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23]}";
+    NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23]};
+    NSError* error = nil;
+    JSONRPCNotification* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCNotification class] fromJSONDictionary:dict error:&error];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
+    [JSONRPCDeSerialization deSerializeString:testData
+                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCResponse:^(JSONRPCResponse *data) {
+                               XCTFail(@"shouldn't be here");
+                           } orJSONRPCNotification:^(JSONRPCNotification *data) {
+                               [expectation fulfill];
+                               XCTAssertEqualObjects(data, expectedResult);
                            } orJSONRPCError:^(JSONRPCErrorResponse *data) {
                                XCTFail(@"shouldn't be here");
                            } serializationError:^(NSError *error) {
