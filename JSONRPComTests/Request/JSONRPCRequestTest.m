@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "JSONRPCRequst.h"
+#import "JSONRPCRequest.h"
 
 @interface JSONRPCRequestTest : XCTestCase
 
@@ -19,7 +19,7 @@
     //{"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
     NSError* error = nil;
-    JSONRPCRequst* sut = [MTLJSONAdapter modelOfClass:[JSONRPCRequst class] fromJSONDictionary:dict error:&error];
+    JSONRPCRequest* sut = [MTLJSONAdapter modelOfClass:[JSONRPCRequest class] fromJSONDictionary:dict error:&error];
     XCTAssertNil(error);
     XCTAssertTrue([sut.method isEqualToString:dict[@"method"]]);
     XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);
@@ -31,7 +31,7 @@
     //{"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
     NSError* error = nil;
-    JSONRPCRequst* sut = [MTLJSONAdapter modelOfClass:[JSONRPCRequst class] fromJSONDictionary:dict error:&error];
+    JSONRPCRequest* sut = [MTLJSONAdapter modelOfClass:[JSONRPCRequest class] fromJSONDictionary:dict error:&error];
     NSDictionary* realResult = [MTLJSONAdapter JSONDictionaryFromModel:sut error:&error];
     XCTAssertNil(error);
     XCTAssertEqualObjects(dict, realResult);
@@ -39,7 +39,7 @@
 
 - (void)testInitSuccesfull{
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
-    JSONRPCRequst* sut = [[JSONRPCRequst alloc] initWithMethod:dict[@"method"] params:dict[@"params"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
+    JSONRPCRequest* sut = [[JSONRPCRequest alloc] initWithMethod:dict[@"method"] params:dict[@"params"] version:dict[@"jsonrpc"] jrpcId:dict[@"id"]];
     XCTAssertNotNil(sut);
     XCTAssertTrue([sut.method isEqualToString:dict[@"method"]]);
     XCTAssertTrue([sut.version isEqualToString:dict[@"jsonrpc"]]);

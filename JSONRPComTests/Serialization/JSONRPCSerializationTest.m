@@ -20,7 +20,7 @@
     NSString* expectedResult = @"{\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23], \"id\": \"1\"}";
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
     NSError* error = nil;
-    JSONRPCRequst* entity = [MTLJSONAdapter modelOfClass:[JSONRPCRequst class] fromJSONDictionary:dict error:nil];
+    JSONRPCRequest* entity = [MTLJSONAdapter modelOfClass:[JSONRPCRequest class] fromJSONDictionary:dict error:nil];
     NSString* realResult = [JSONRPCSerialization serializeEntity:entity withError:&error];
     XCTAssertEqualObjects([expectedResult toJSONDictionaryWithError:nil], [realResult toJSONDictionaryWithError:nil]);
 }

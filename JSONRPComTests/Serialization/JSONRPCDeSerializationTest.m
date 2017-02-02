@@ -19,10 +19,10 @@
     NSString* testData = @"{\"jsonrpc\": \"2.0\", \"method\": \"subtract\", \"params\": [42, 23], \"id\": \"1\"}";
     NSDictionary* dict = @{@"jsonrpc": @"2.0", @"method": @"subtract", @"params": @[@42, @23], @"id": @"1"};
     NSError* error = nil;
-    JSONRPCRequst* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCRequst class] fromJSONDictionary:dict error:&error];
+    JSONRPCRequest* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCRequest class] fromJSONDictionary:dict error:&error];
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                [expectation fulfill];
                                XCTAssertEqualObjects(data, expectedResult);
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
@@ -44,7 +44,7 @@
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                XCTFail(@"shouldn't be here");
@@ -66,7 +66,7 @@
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                XCTFail(@"shouldn't be here");
@@ -91,7 +91,7 @@
     JSONRPCNotification* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCNotification class] fromJSONDictionary:dict error:&error];
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                XCTFail(@"shouldn't be here");
@@ -115,7 +115,7 @@
     JSONRPCResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCResponse class] fromJSONDictionary:dict error:&error];
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                [expectation fulfill];
@@ -139,7 +139,7 @@
     JSONRPCErrorResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                XCTFail(@"shouldn't be here");
@@ -163,7 +163,7 @@
     JSONRPCErrorResponse* expectedResult = [MTLJSONAdapter modelOfClass:[JSONRPCErrorResponse class] fromJSONDictionary:dict error:&error];
     XCTestExpectation *expectation = [self expectationWithDescription:@"High Expectations"];
     [JSONRPCDeSerialization deSerializeString:testData
-                           withJSONRPCRequset:^(JSONRPCRequst *data) {
+                           withJSONRPCRequset:^(JSONRPCRequest *data) {
                                XCTFail(@"shouldn't be here");
                            } orJSONRPCResponse:^(JSONRPCResponse *data) {
                                XCTFail(@"shouldn't be here");
