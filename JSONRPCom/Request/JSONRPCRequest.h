@@ -1,5 +1,5 @@
 //
-//  JSONRPCRequset.h
+//  JSONRPCRequest.h
 //  JSONRPCom
 //
 //  Created by andrew batutin on 11/12/16.
