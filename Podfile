@@ -8,7 +8,7 @@ target 'JSONRPCom' do
 end
 
 target 'JSONRPComTests' do
-	pod "Mantle"
+	
 end
 
 target 'sndbx' do

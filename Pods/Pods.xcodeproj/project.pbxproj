@@ -10,7 +10,6 @@
 		035D907A1AB62CA43E9BB73B3BE38729 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 676D2330B963ABCC786983402026EC64 /* MTLModel+NSCoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0F8BC4F32DAF44B2979D14030416A084 /* NSValueTransformer+MTLInversionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E67291117E1E911E45F164515BF8FCE6 /* NSValueTransformer+MTLInversionAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A05BF934A67A1D58510863477450A6D /* Mantle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CED60AC5D48ECD53B1AB053464CBBA /* Mantle-dummy.m */; };
-		1DEC9A4EB4C30A0CB56A983EF9F97132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
 		1F871B2B505D5C2E316DFA0618C43847 /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A54EBA7790925FD50F55C0499322F48 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2018607C3D61886864802AF58E0DFC61 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A70CF293108DB55A6B7B6A3A252D635D /* metamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		206FED9411A3D35E91EEE4769E584D38 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 358C99F39EB2D07ABC177D02339B14DE /* MTLValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -44,22 +43,16 @@
 		A5EF38D3E713ABD69F6A842A6FF39998 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0117FCAF1A742D1D3817B289DE986FC8 /* NSDictionary+MTLJSONKeyPath.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A61A3AAD4C70527DFCDEDB6DACB633C2 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = EE915E44B140D9AC1EDAD0EA9B4BCE10 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A69D3FE7C23DEF1824371EC0817A08E4 /* MTLTransformerErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AADF892E801E1C7A1A1DF6689E214CD /* MTLTransformerErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A71DA51A12DA4BD2DC65011F1F5B578E /* Pods-JSONRPComTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1740F2226602628081769E3931640E /* Pods-JSONRPComTests-dummy.m */; };
 		A99D00C50186853EB4A698ABB95AA039 /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8452910720862BBBAC90CAC2F2C0A2 /* EXTScope.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AF2B96966AA52AD650A2B397967A8250 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D8F67F96E0E864126DD44A78636114 /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AFA0E7524AF6ED96E138C8E512481FE5 /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A29CA86A9D16449B8C7103D5E3872F2A /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9FBD0B44D311A5E29D1CDC08BC73E1 /* Pods-JSONRPComTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1740F2226602628081769E3931640E /* Pods-JSONRPComTests-dummy.m */; };
+		E2161F097A8D05F06EA6B161E3B0DD88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EEDD58EC35A4E9347CB06714F7040C /* Foundation.framework */; };
 		E7542B2C536DB2C543894587075D1289 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4782AF634F88B00CB8CAC35DBB4BEF0F /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE9988D26C89728D90DAEDC9C1B11412 /* Pods-JSONRPCom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2861B21429B51D8B700914478D820E9 /* Pods-JSONRPCom-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9613AC208FCF1E8AC232869F1BC7C240 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E2F85A9EA167EFA71B3DCB5DF170059;
-			remoteInfo = Mantle;
-		};
 		FE61F552A348E7FC78A3D6967F70A3C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -138,14 +131,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B1CFFD1BA798C345D156AEC3D4CFEDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1DEC9A4EB4C30A0CB56A983EF9F97132 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4E921F89237D458BADF6471BED84B3CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +152,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F4CDF7F55B3BD31D8F11194D0404E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B15CFDEBA64C5CEFD1E388B49A4E6F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2161F097A8D05F06EA6B161E3B0DD88 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,23 +370,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4C31E54D3BEB2F8AE76710B6E1AECCFB /* Pods-JSONRPComTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B4DCD20EECC92F202741BA655835FA7 /* Build configuration list for PBXNativeTarget "Pods-JSONRPComTests" */;
-			buildPhases = (
-				C92E835B0A22903B96293B700DDD8D08 /* Sources */,
-				4B1CFFD1BA798C345D156AEC3D4CFEDF /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				877019413D50997F7EB7D2E88A290777 /* PBXTargetDependency */,
-			);
-			name = "Pods-JSONRPComTests";
-			productName = "Pods-JSONRPComTests";
-			productReference = 80F842F16A53DAD901BCD22478566D2F /* libPods-JSONRPComTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 697C5D321F145E584E7A44A336A8952E /* Build configuration list for PBXNativeTarget "Mantle" */;
@@ -444,6 +420,22 @@
 			productReference = 5B5A1ACC7421E8AF95A88171B6405430 /* libPods-sndbx.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		F9B2C711CB24E0E1829142302AB0A4D8 /* Pods-JSONRPComTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30E1AD4B27FC2BA77B7F2CFE3ECFB0E /* Build configuration list for PBXNativeTarget "Pods-JSONRPComTests" */;
+			buildPhases = (
+				90EDC979CDE763E1E3588C0392B054FF /* Sources */,
+				B15CFDEBA64C5CEFD1E388B49A4E6F4B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JSONRPComTests";
+			productName = "Pods-JSONRPComTests";
+			productReference = 80F842F16A53DAD901BCD22478566D2F /* libPods-JSONRPComTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -467,7 +459,7 @@
 			targets = (
 				8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */,
 				936F5D06DA4ABE128E689F6A5CC1C332 /* Pods-JSONRPCom */,
-				4C31E54D3BEB2F8AE76710B6E1AECCFB /* Pods-JSONRPComTests */,
+				F9B2C711CB24E0E1829142302AB0A4D8 /* Pods-JSONRPComTests */,
 				C021E3E8C49AA3ED2B971F8FBEADE786 /* Pods-sndbx */,
 			);
 		};
@@ -514,11 +506,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C92E835B0A22903B96293B700DDD8D08 /* Sources */ = {
+		90EDC979CDE763E1E3588C0392B054FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DA51A12DA4BD2DC65011F1F5B578E /* Pods-JSONRPComTests-dummy.m in Sources */,
+				BF9FBD0B44D311A5E29D1CDC08BC73E1 /* Pods-JSONRPComTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,12 +522,6 @@
 			name = Mantle;
 			target = 8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */;
 			targetProxy = FE61F552A348E7FC78A3D6967F70A3C1 /* PBXContainerItemProxy */;
-		};
-		877019413D50997F7EB7D2E88A290777 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mantle;
-			target = 8E2F85A9EA167EFA71B3DCB5DF170059 /* Mantle */;
-			targetProxy = 9613AC208FCF1E8AC232869F1BC7C240 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -611,30 +597,7 @@
 			};
 			name = Release;
 		};
-		772A1C188EDFA4F2B5675B41106C03F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4A355026EC9D46C9B5DD96BBDD44953 /* Pods-JSONRPComTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		85CE2806F35A686A1129472DF3EDEC3C /* Release */ = {
+		310113AFDC690FE139463B8899E4A205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D95F5F67A9B8AAD85F9B3B67B20ECEC3 /* Pods-JSONRPComTests.release.xcconfig */;
 			buildSettings = {
@@ -791,6 +754,29 @@
 			};
 			name = Release;
 		};
+		E5745EA0E3FBD18F3A43B61479810707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A355026EC9D46C9B5DD96BBDD44953 /* Pods-JSONRPComTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		EDD37AF5CFFA6F2ACC7F0A09EEFE2515 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42D24A222A090EEFE114BC9AF4F4C33E /* Pods-JSONRPCom.debug.xcconfig */;
@@ -844,11 +830,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B4DCD20EECC92F202741BA655835FA7 /* Build configuration list for PBXNativeTarget "Pods-JSONRPComTests" */ = {
+		A30E1AD4B27FC2BA77B7F2CFE3ECFB0E /* Build configuration list for PBXNativeTarget "Pods-JSONRPComTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				772A1C188EDFA4F2B5675B41106C03F3 /* Debug */,
-				85CE2806F35A686A1129472DF3EDEC3C /* Release */,
+				E5745EA0E3FBD18F3A43B61479810707 /* Debug */,
+				310113AFDC690FE139463B8899E4A205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
