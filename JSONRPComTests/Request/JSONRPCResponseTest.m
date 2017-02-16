@@ -2,12 +2,13 @@
 //  JSONRPCResponseTest.m
 //  JSONRPCom
 //
-//  Created by andrew batutin on 11/12/16.
+//  Created by Andrew Batutin on 11/12/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "JSONRPCResponse.h"
+#import "MTLJSONAdapter+Utils.h"
 
 @interface JSONRPCResponseTest : XCTestCase
 

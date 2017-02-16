@@ -2,12 +2,13 @@
 //  JSONRPCNotificationTest.m
 //  JSONRPCom
 //
-//  Created by andrew batutin on 11/13/16.
+//  Created by Andrew Batutin on 11/13/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#include "JSONRPCNotification.h"
+#import "JSONRPCNotification.h"
+#import "MTLJSONAdapter+Utils.h"
 
 @interface JSONRPCNotificationTest : XCTestCase
 

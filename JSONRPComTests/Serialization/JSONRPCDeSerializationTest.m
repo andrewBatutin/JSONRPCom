@@ -2,12 +2,13 @@
 //  JSONRPCDeSerializationTest.m
 //  JSONRPCom
 //
-//  Created by andrew batutin on 12/6/16.
+//  Created by Andrew Batutin on 12/6/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "JSONRPCDeSerialization.h"
+#import "MTLJSONAdapter+Utils.h"
 
 @interface JSONRPCDeSerializationTest : XCTestCase
 

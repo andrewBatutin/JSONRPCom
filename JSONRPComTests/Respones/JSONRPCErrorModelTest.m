@@ -2,12 +2,13 @@
 //  JSONRPCErrorModelTest.m
 //  JSONRPCom
 //
-//  Created by andrew batutin on 11/13/16.
+//  Created by Andrew Batutin on 11/13/16.
 //  Copyright © 2016 HomeOfRisingSun. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "JSONRPCErrorModel.h"
+#import "MTLJSONAdapter+Utils.h"
 
 @interface JSONRPCErrorModelTest : XCTestCase
 

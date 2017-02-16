@@ -9,50 +9,41 @@
 /* Begin PBXBuildFile section */
 		000931CB1DF6F12B006FB3ED /* JSONRPCDeSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931C91DF6F12B006FB3ED /* JSONRPCDeSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000931CC1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CA1DF6F12B006FB3ED /* JSONRPCDeSerialization.m */; };
-		000931CD1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CA1DF6F12B006FB3ED /* JSONRPCDeSerialization.m */; };
-		000931D01DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CF1DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m */; };
 		000931D31DF6FC4B006FB3ED /* NSDictionary+ToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931D11DF6FC4B006FB3ED /* NSDictionary+ToString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000931D41DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */; };
-		000931D51DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D21DF6FC4B006FB3ED /* NSDictionary+ToString.m */; };
-		000931D81DF6FCD3006FB3ED /* NSDictionaryToStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D71DF6FCD3006FB3ED /* NSDictionaryToStringTest.m */; };
 		000931DB1DF70223006FB3ED /* NSString+ToJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931D91DF70223006FB3ED /* NSString+ToJSONDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000931DC1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */; };
-		000931DD1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DA1DF70223006FB3ED /* NSString+ToJSONDictionary.m */; };
-		000931DF1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DE1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m */; };
 		000931E51DF8351B006FB3ED /* JSONRPCSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 000931E31DF8351B006FB3ED /* JSONRPCSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000931E61DF8351B006FB3ED /* JSONRPCSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931E41DF8351B006FB3ED /* JSONRPCSerialization.m */; };
-		000931E71DF8351B006FB3ED /* JSONRPCSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931E41DF8351B006FB3ED /* JSONRPCSerialization.m */; };
-		000931E91DF83599006FB3ED /* JSONRPCSerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931E81DF83599006FB3ED /* JSONRPCSerializationTest.m */; };
-		003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */; };
+		0034D02B1E55B1D900D8E076 /* NSDictionaryToStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931D71DF6FCD3006FB3ED /* NSDictionaryToStringTest.m */; };
+		0034D02C1E55B1D900D8E076 /* NSStringToJSONDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931DE1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m */; };
+		0034D02D1E55B1DE00D8E076 /* JSONRPCDeSerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931CF1DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m */; };
+		0034D02E1E55B1DE00D8E076 /* JSONRPCSerializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 000931E81DF83599006FB3ED /* JSONRPCSerializationTest.m */; };
+		0034D02F1E55B1E400D8E076 /* JSONRPCResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */; };
+		0034D0301E55B1E400D8E076 /* JSONRPCErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */; };
+		0034D0311E55B1E400D8E076 /* JSONRPCErrorModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A01DD8DD6800F24463 /* JSONRPCErrorModelTest.m */; };
+		0034D0321E55B1E900D8E076 /* JSONRPCNotificationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */; };
+		0034D0331E55B1E900D8E076 /* JSONRPCRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */; };
+		0034D0341E55B1EC00D8E076 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
+		0034D0361E55B82D00D8E076 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
 		003C979D1DD8D95400F24463 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003C979E1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */; };
-		003C979F1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */; };
-		003C97A11DD8DD6800F24463 /* JSONRPCErrorModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A01DD8DD6800F24463 /* JSONRPCErrorModelTest.m */; };
 		003C97A51DD8E45200F24463 /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003C97A61DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
-		003C97A71DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
 		003C97AA1DD9F71D00F24463 /* JSONRPCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A91DD9F71D00F24463 /* JSONRPCommunication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00506B801DD7ABAE00F4E6A8 /* JSONRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B7E1DD7ABAE00F4E6A8 /* JSONRPCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00506B811DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
-		00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B7F1DD7ABAE00F4E6A8 /* JSONRPCResponse.m */; };
 		00506B851DD7ABF700F4E6A8 /* JSONRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B841DD7ABF700F4E6A8 /* JSONRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B861DD7AEF100F4E6A8 /* JSONRPCResponseTest.m */; };
 		00506B8A1DD7B29200F4E6A8 /* JSONRPCErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B881DD7B29200F4E6A8 /* JSONRPCErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00506B8B1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */; };
-		00506B8C1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B891DD7B29200F4E6A8 /* JSONRPCErrorResponse.m */; };
-		00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B8E1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m */; };
 		00506B911DD7B4AF00F4E6A8 /* JSONRPCId.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B901DD7B4AF00F4E6A8 /* JSONRPCId.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00506B941DD7B51700F4E6A8 /* JSONRPCNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B921DD7B51700F4E6A8 /* JSONRPCNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00506B951DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B931DD7B51700F4E6A8 /* JSONRPCNotification.m */; };
-		00506B961DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 00506B931DD7B51700F4E6A8 /* JSONRPCNotification.m */; };
 		00506B981DD7B59F00F4E6A8 /* JSONRPCMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 00506B971DD7B59F00F4E6A8 /* JSONRPCMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E06A121DD71D12004975B4 /* JSONRPCom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E06A081DD71D11004975B4 /* JSONRPCom.framework */; };
-		00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
 		00E06A191DD71D12004975B4 /* JSONRPCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A0B1DD71D12004975B4 /* JSONRPCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E06A261DD7248F004975B4 /* JSONRPCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E06A241DD7248F004975B4 /* JSONRPCRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00E06A271DD7248F004975B4 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequest.m */; };
-		00E06A281DD7248F004975B4 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A251DD7248F004975B4 /* JSONRPCRequest.m */; };
-		00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */; };
 		00E06A331DD74B38004975B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A321DD74B38004975B4 /* main.m */; };
 		2D5C4315F7814ED030EC589C /* libPods-sndbx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */; };
 		B15DF64EE4ECB0AF530EA75A /* libPods-JSONRPComTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */; };
@@ -633,26 +624,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003C979F1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */,
-				000931D01DF6F7E9006FB3ED /* JSONRPCDeSerializationTest.m in Sources */,
-				00E06A171DD71D12004975B4 /* JSONRPComTests.m in Sources */,
-				000931E71DF8351B006FB3ED /* JSONRPCSerialization.m in Sources */,
-				00E06A281DD7248F004975B4 /* JSONRPCRequest.m in Sources */,
-				000931DF1DF702EE006FB3ED /* NSStringToJSONDictionaryTest.m in Sources */,
-				00506B8F1DD7B32B00F4E6A8 /* JSONRPCErrorTest.m in Sources */,
-				00506B8C1DD7B29200F4E6A8 /* JSONRPCErrorResponse.m in Sources */,
-				000931D81DF6FCD3006FB3ED /* NSDictionaryToStringTest.m in Sources */,
-				003C97A71DD8E45200F24463 /* MTLJSONAdapter+Utils.m in Sources */,
-				000931E91DF83599006FB3ED /* JSONRPCSerializationTest.m in Sources */,
-				003C97A11DD8DD6800F24463 /* JSONRPCErrorModelTest.m in Sources */,
-				00506B821DD7ABAE00F4E6A8 /* JSONRPCResponse.m in Sources */,
-				00506B871DD7AEF100F4E6A8 /* JSONRPCResponseTest.m in Sources */,
-				003C979A1DD8D7B000F24463 /* JSONRPCNotificationTest.m in Sources */,
-				000931CD1DF6F12B006FB3ED /* JSONRPCDeSerialization.m in Sources */,
-				000931DD1DF70223006FB3ED /* NSString+ToJSONDictionary.m in Sources */,
-				000931D51DF6FC4B006FB3ED /* NSDictionary+ToString.m in Sources */,
-				00506B961DD7B51700F4E6A8 /* JSONRPCNotification.m in Sources */,
-				00E06A2B1DD7396E004975B4 /* JSONRPCRequestTest.m in Sources */,
+				0034D0361E55B82D00D8E076 /* MTLJSONAdapter+Utils.m in Sources */,
+				0034D0311E55B1E400D8E076 /* JSONRPCErrorModelTest.m in Sources */,
+				0034D0331E55B1E900D8E076 /* JSONRPCRequestTest.m in Sources */,
+				0034D02C1E55B1D900D8E076 /* NSStringToJSONDictionaryTest.m in Sources */,
+				0034D0321E55B1E900D8E076 /* JSONRPCNotificationTest.m in Sources */,
+				0034D02B1E55B1D900D8E076 /* NSDictionaryToStringTest.m in Sources */,
+				0034D0301E55B1E400D8E076 /* JSONRPCErrorTest.m in Sources */,
+				0034D02E1E55B1DE00D8E076 /* JSONRPCSerializationTest.m in Sources */,
+				0034D02F1E55B1E400D8E076 /* JSONRPCResponseTest.m in Sources */,
+				0034D02D1E55B1DE00D8E076 /* JSONRPCDeSerializationTest.m in Sources */,
+				0034D0341E55B1EC00D8E076 /* JSONRPComTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A41388C54EFD52CA3FD67E5 /* Pods-JSONRPCom.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
@@ -794,6 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85758DC305181C4AAF920D67 /* Pods-JSONRPCom.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
@@ -813,9 +797,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F66A73DCF73CA69F23974C9 /* Pods-JSONRPComTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
 				INFOPLIST_FILE = JSONRPComTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.JSONRPComTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -825,9 +811,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2EFD89671C182CAA7DABB83 /* Pods-JSONRPComTests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 4E4L42WQ49;
 				INFOPLIST_FILE = JSONRPComTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = HomeOfRisingSun.JSONRPComTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
