@@ -26,6 +26,7 @@
 		0034D0331E55B1E900D8E076 /* JSONRPCRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A2A1DD7396E004975B4 /* JSONRPCRequestTest.m */; };
 		0034D0341E55B1EC00D8E076 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
 		0034D0361E55B82D00D8E076 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
+		0034D0411E55BDBA00D8E076 /* libMantle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0034D0401E55BDBA00D8E076 /* libMantle.a */; };
 		003C979D1DD8D95400F24463 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003C979E1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */; };
 		003C97A51DD8E45200F24463 /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,6 +86,7 @@
 		000931E31DF8351B006FB3ED /* JSONRPCSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCSerialization.h; sourceTree = "<group>"; };
 		000931E41DF8351B006FB3ED /* JSONRPCSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCSerialization.m; sourceTree = "<group>"; };
 		000931E81DF83599006FB3ED /* JSONRPCSerializationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCSerializationTest.m; sourceTree = "<group>"; };
+		0034D0401E55BDBA00D8E076 /* libMantle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMantle.a; path = "../../../Library/Developer/Xcode/DerivedData/JSONRPCom-bqyxhkbvbsftbzhhsbuarkawbrjv/Build/Products/Debug-iphonesimulator/Mantle/libMantle.a"; sourceTree = "<group>"; };
 		003C97991DD8D7B000F24463 /* JSONRPCNotificationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCNotificationTest.m; path = ../Respones/JSONRPCNotificationTest.m; sourceTree = "<group>"; };
 		003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorModel.h; sourceTree = "<group>"; };
 		003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorModel.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0034D0411E55BDBA00D8E076 /* libMantle.a in Frameworks */,
 				D0E5E1B84CECB0EFE438BF5D /* libPods-JSONRPCom.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +340,7 @@
 		90ED199EE30396715AA37BF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0034D0401E55BDBA00D8E076 /* libMantle.a */,
 				CFC9C03040C49B3586084817 /* libPods-JSONRPCom.a */,
 				0F3244DF552C3D542493E890 /* libPods-JSONRPComTests.a */,
 				2FC758B41ACC43C2FD1B4B58 /* libPods-sndbx.a */,
