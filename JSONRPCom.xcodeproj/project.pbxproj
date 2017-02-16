@@ -27,7 +27,6 @@
 		0034D0341E55B1EC00D8E076 /* JSONRPComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E06A161DD71D12004975B4 /* JSONRPComTests.m */; };
 		0034D0361E55B82D00D8E076 /* MTLJSONAdapter+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C97A41DD8E45200F24463 /* MTLJSONAdapter+Utils.m */; };
 		0034D0411E55BDBA00D8E076 /* libMantle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0034D0401E55BDBA00D8E076 /* libMantle.a */; };
-		0034D0421E55C62600D8E076 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E06A0C1DD71D12004975B4 /* Info.plist */; };
 		003C979D1DD8D95400F24463 /* JSONRPCErrorModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C979B1DD8D95400F24463 /* JSONRPCErrorModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003C979E1DD8D95400F24463 /* JSONRPCErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003C979C1DD8D95400F24463 /* JSONRPCErrorModel.m */; };
 		003C97A51DD8E45200F24463 /* MTLJSONAdapter+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 003C97A31DD8E45200F24463 /* MTLJSONAdapter+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -487,7 +486,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0034D0421E55C62600D8E076 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

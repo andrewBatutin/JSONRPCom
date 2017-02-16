@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/andrewBatutin/JSONRPCom.git", :tag => s.version }
   s.source_files = 'JSONRPCom/**/*'
   s.framework    = 'Foundation'
+  
 
   s.ios.deployment_target = '5.0' # there are usages of __weak
   s.osx.deployment_target = '10.7'
